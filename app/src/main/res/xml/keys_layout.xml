@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:keyWidth="10%p"
-    android:horizontalGap="3px"
-    android:verticalGap="3px"
-    android:keyHeight="60dp"
-    android:keyTextColor="@color/colorAccent"
-    android:keyBackground="@color/colorPrimaryDark"
+    android:horizontalGap="4dp"
+    android:verticalGap="4dp"
+    android:keyHeight="52dp"
+    android:keyTextColor="#000000"
+    android:keyBackground="@drawable/idk"
     >
     <Row>
         <Key android:codes="49" android:keyLabel="1" android:keyEdgeFlags="left"/>
@@ -18,7 +18,6 @@
         <Key android:codes="56" android:keyLabel="8"/>
         <Key android:codes="57" android:keyLabel="9"/>
         <Key android:codes="48" android:keyLabel="0"/>
-        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
         <Key android:codes="113" android:keyLabel="q" android:keyEdgeFlags="left"/>
@@ -33,7 +32,7 @@
         <Key android:codes="112" android:keyLabel="p" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="97" android:keyLabel="a" android:keyEdgeFlags="left"/>
+        <Key android:codes="97" android:keyLabel="a" />
         <Key android:codes="115" android:keyLabel="s"/>
         <Key android:codes="100" android:keyLabel="d"/>
         <Key android:codes="102" android:keyLabel="f"/>
@@ -42,10 +41,9 @@
         <Key android:codes="106" android:keyLabel="j"/>
         <Key android:codes="107" android:keyLabel="k"/>
         <Key android:codes="108" android:keyLabel="l"/>
-        <Key android:codes="35,64" android:keyLabel="\# \@" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="-1" android:keyLabel="CAPS" android:keyEdgeFlags="left"/>
+        <Key android:codes="-1" android:keyIcon="@drawable/ic_baseline_arrow_circle_up_24" android:keyEdgeFlags="left"/>
         <Key android:codes="122" android:keyLabel="z"/>
         <Key android:codes="120" android:keyLabel="x"/>
         <Key android:codes="99" android:keyLabel="c"/>
@@ -53,14 +51,12 @@
         <Key android:codes="98" android:keyLabel="b"/>
         <Key android:codes="110" android:keyLabel="n"/>
         <Key android:codes="109" android:keyLabel="m"/>
-        <Key android:codes="46" android:keyLabel="."/>
-        <Key android:codes="63,33,58" android:keyLabel="\? ! :" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/ic_baseline_backspace_24" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"  android:keyEdgeFlags="left"/>
-        <Key android:codes="47" android:keyLabel="/" android:keyWidth="10%p" />
-        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="60%p" android:isRepeatable="true"/>
-        <Key android:codes="-4" android:keyBackground="@color/colorPrimary" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="44" android:keyLabel="123" android:keyWidth="25%p"  android:keyEdgeFlags="left"/>
+        <Key android:codes="32" android:keyLabel="space" android:keyWidth="75%p" android:isRepeatable="true"/>
+        <Key android:codes="-4" android:keyBackground="@color/colorPrimary" android:keyLabel="return" android:keyWidth="25%p" android:keyEdgeFlags="right"/>
     </Row>
 
 </Keyboard>

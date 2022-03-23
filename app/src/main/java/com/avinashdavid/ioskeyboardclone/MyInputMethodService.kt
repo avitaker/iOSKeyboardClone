@@ -75,8 +75,10 @@ class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardAction
     override fun onCreateInputView(): View {
         keyboardView = layoutInflater.inflate(R.layout.keyboard_view, null) as KeyboardView
         keyboard = Keyboard(this, R.xml.keys_layout)
-        keyboardView!!.keyboard = keyboard
-        keyboardView!!.setOnKeyboardActionListener(this)
+        keyboardView!!.apply {
+            keyboard = this@MyInputMethodService.keyboard
+            setOnKeyboardActionListener(this@MyInputMethodService)
+        }
         return keyboardView!!
     }
 }
